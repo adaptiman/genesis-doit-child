@@ -41,15 +41,16 @@ include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.
 include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php' );
 
 // Child theme (do not remove).
-define( 'CHILD_THEME_NAME', 'Genesis Sample' );
+define( 'CHILD_THEME_NAME', 'Genesis DoIT Child' );
 define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
-define( 'CHILD_THEME_VERSION', '2.3.0' );
+define( 'CHILD_THEME_VERSION', '2.3.1' );
 
 // Enqueue Scripts and Styles.
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
 function genesis_sample_enqueue_scripts_styles() {
 
-	wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700', array(), CHILD_THEME_VERSION );
+//edited to reference Open Sans as the base font.
+	wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
 
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
@@ -151,8 +152,3 @@ function genesis_sample_comments_gravatar( $args ) {
 }
 
 //all code below this line is custom for DoIT Genesis Child Theme
-//* Enqueue Lato Google font
-add_action( 'wp_enqueue_scripts', 'sp_load_google_fonts' );
-function sp_load_google_fonts() {
-	wp_enqueue_style( 'google-font-open-sans', '//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i', array(), CHILD_THEME_VERSION );
-}
