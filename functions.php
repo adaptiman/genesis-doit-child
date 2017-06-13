@@ -149,3 +149,10 @@ function genesis_sample_comments_gravatar( $args ) {
 	return $args;
 
 }
+
+//all code below this line is custom for DoIT Genesis Child Theme
+//* Enqueue Lato Google font
+add_action( 'wp_enqueue_scripts', 'sp_load_google_fonts' );
+function sp_load_google_fonts() {
+	wp_enqueue_style( 'google-font-open-sans', '//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i', array(), CHILD_THEME_VERSION );
+}
