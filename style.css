@@ -1,16 +1,16 @@
 /*
-	Theme Name: Genesis Sample
+	Theme Name: DoIT Genesis Template
 	Theme URI: http://www.studiopress.com/
 	Description: This is the sample theme created for the Genesis Framework.
 	Author: StudioPress
 	Author URI: http://www.studiopress.com/
 
-	Version: 2.3.0
+	Version: 2.3.1
 
 	Tags: black, red, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 
 	Template: genesis
-	Template Version: 2.3.0
+	Template Version: 2.3.1
 
 	License: GPL-2.0+
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -159,7 +159,7 @@ body > div {
 body {
 	background-color: #eee;
 	color: #333;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	font-size: 2rem;
 	-webkit-font-smoothing: antialiased;
@@ -260,7 +260,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	line-height: 1.2;
 	margin: 0 0 10px;
