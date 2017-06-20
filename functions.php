@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample.
+ * DSA Genesis
  *
- * This file adds functions to the Genesis Sample Theme.
+ * This file adds functions to the DSA Genesis Theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
- * @license GPL-2.0+
- * @link    http://www.studiopress.com/
+ * @package DSA Genesis
+ * @author  David Sweeney
+ * @license GPL-3.0+
+ * @link    http://doit.tamu.edu/
  */
 
 // Start the engine.
@@ -41,9 +41,9 @@ include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.
 include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php' );
 
 // Child theme (do not remove).
-define( 'CHILD_THEME_NAME', 'Genesis Sample' );
+define( 'CHILD_THEME_NAME', 'DSA Genesis' );
 define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
-define( 'CHILD_THEME_VERSION', '2.3.0' );
+define( 'CHILD_THEME_VERSION', '2.3.1' );
 
 // Enqueue Scripts and Styles.
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
