@@ -1,9 +1,9 @@
 /*
 	Theme Name: DoIT Genesis Template
-	Theme URI: http://www.studiopress.com/
-	Description: This is the sample theme created for the Genesis Framework.
-	Author: StudioPress
-	Author URI: http://www.studiopress.com/
+	Theme URI: http://doit.tamu.edu/
+	Description: This is a DoIT Genesis Child Theme based upon the 2.3.0 Genesis Child theme.
+	Author: David Sweeney
+	Author URI: http://people.tamu.edu/~adaptiman/
 
 	Version: 2.3.1
 
@@ -1041,7 +1041,7 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #fff;
+	background-color: #50000;
 }
 
 .site-header > .wrap {
