@@ -42,7 +42,7 @@ include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.
 
 // Child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'DSA Genesis' );
-define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
+define( 'CHILD_THEME_URL', 'http://doit.tamu.edu/' );
 define( 'CHILD_THEME_VERSION', '2.3.1' );
 
 // Enqueue Scripts and Styles.
