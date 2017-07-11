@@ -1,10 +1,10 @@
 <?php
 /**
- * DSA Genesis
+ * DSA-Genesis
  *
- * This file adds functions to the DSA Genesis Theme.
+ * This file adds functions to the DSA-Genesis Theme.
  *
- * @package DSA Genesis
+ * @package DSA-Genesis
  * @author  David Sweeney
  * @license GPL-3.0+
  * @link    http://doit.tamu.edu/
@@ -41,9 +41,12 @@ include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.
 include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php' );
 
 // Child theme (do not remove).
-define( 'CHILD_THEME_NAME', 'DSA Genesis' );
+define( 'CHILD_THEME_NAME', 'DSA-Genesis' );
 define( 'CHILD_THEME_URL', 'http://doit.tamu.edu/' );
 define( 'CHILD_THEME_VERSION', '2.3.1' );
+
+// Add theme widget areas.
+include_once( get_stylesheet_directory() . '/includes/widget-areas.php' );
 
 // Enqueue Scripts and Styles.
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
@@ -109,6 +112,14 @@ add_theme_support( 'genesis-after-entry-widget-area' );
 
 // Add support for 3-column footer widgets.
 add_theme_support( 'genesis-footer-widgets', 3 );
+
+// Unregister layouts that use a secondary sidebar.
+genesis_unregister_layout( 'content-sidebar-sidebar' );
+genesis_unregister_layout( 'sidebar-content-sidebar' );
+genesis_unregister_layout( 'sidebar-sidebar-content' );
+
+// Unregister secondary sidebar.
+unregister_sidebar( 'sidebar-alt');
 
 // Add Image Sizes.
 add_image_size( 'featured-image', 720, 400, TRUE );
