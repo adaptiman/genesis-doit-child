@@ -33,8 +33,8 @@ function genesis_sample_customizer_register( $wp_customize ) {
 			$wp_customize,
 			'genesis_sample_link_color',
 			array(
-				'description' => __( 'Change the color of post info links, hover color of linked titles, hover color of menu items, and more.', 'genesis-sample' ),
-				'label'       => __( 'Link Color', 'genesis-sample' ),
+				'description' => __( 'Change the color of post info links, hover color of linked titles, hover color of menu items, and more.', 'DSA-Genesis' ),
+				'label'       => __( 'Link Color', 'DSA-Genesis' ),
 				'section'     => 'colors',
 				'settings'    => 'genesis_sample_link_color',
 			)
@@ -54,8 +54,8 @@ function genesis_sample_customizer_register( $wp_customize ) {
 			$wp_customize,
 			'genesis_sample_accent_color',
 			array(
-				'description' => __( 'Change the default hovers color for button.', 'genesis-sample' ),
-				'label'       => __( 'Accent Color', 'genesis-sample' ),
+				'description' => __( 'Change the default hovers color for button.', 'DSA-Genesis' ),
+				'label'       => __( 'Accent Color', 'DSA-Genesis' ),
 				'section'     => 'colors',
 				'settings'    => 'genesis_sample_accent_color',
 			)

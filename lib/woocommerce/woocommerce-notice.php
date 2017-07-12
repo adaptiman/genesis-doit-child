@@ -50,7 +50,7 @@ function genesis_sample_woocommerce_theme_notice() {
 	if ( get_user_option( 'genesis_sample_woocommerce_message_dismissed', get_current_user_id() ) ) {
 		return;
 	}
-	$notice_html = sprintf( __( 'Please install and activate <a href="https://wordpress.org/plugins/genesis-connect-woocommerce/" target="_blank">Genesis Connect for WooCommerce</a> to <strong>enable WooCommerce support for %s</strong>.', 'genesis-sample' ), esc_html( CHILD_THEME_NAME ) );
+	$notice_html = sprintf( __( 'Please install and activate <a href="https://wordpress.org/plugins/genesis-connect-woocommerce/" target="_blank">Genesis Connect for WooCommerce</a> to <strong>enable WooCommerce support for %s</strong>.', 'DSA-Genesis' ), esc_html( CHILD_THEME_NAME ) );
 
 	if ( current_user_can( 'install_plugins' ) ) {
 		$plugin_slug  = 'genesis-connect-woocommerce';
@@ -64,9 +64,9 @@ function genesis_sample_woocommerce_theme_notice() {
 				$admin_url
 			),
 			'install-plugin_' . $plugin_slug
-		), __( 'install and activate Genesis Connect for WooCommerce', 'genesis-sample' ) );
+		), __( 'install and activate Genesis Connect for WooCommerce', 'DSA-Genesis' ) );
 
-		$notice_html = sprintf( __( 'Please %s to <strong>enable WooCommerce support for %s</strong>.', 'genesis-sample' ), $install_link, esc_html( CHILD_THEME_NAME ) );
+		$notice_html = sprintf( __( 'Please %s to <strong>enable WooCommerce support for %s</strong>.', 'DSA-Genesis' ), $install_link, esc_html( CHILD_THEME_NAME ) );
 	}
 
 	echo '<div class="notice notice-info is-dismissible genesis-sample-woocommerce-notice"><p>' . $notice_html . '</p></div>';
